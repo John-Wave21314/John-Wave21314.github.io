@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John-Wave21314</title>
     <style>
+        @keyframes fadein {
+            100% {
+                opacity: 1;
+                transform:translate(17vw,3ch);
+            }
+        }
         body {
             color: white;
             background-color: black;
@@ -32,7 +38,12 @@
             height:100vh;
             width: 70vw;
             position: absolute;
-            transform: translate(17vw,3vh);
+            transform: translate(17vw,0vh);
+            opacity: 0;
+            animation-name: fadein;
+            animation-duration:0.6s;
+            animation-fill-mode: forwards;
+
         } 
     </style>
 </head>

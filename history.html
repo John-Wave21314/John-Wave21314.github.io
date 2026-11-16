@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History</title>
     <style>
+        @keyframes fadein {
+            100% {
+                opacity: 1;
+            }
+        }
         body {
             color: white;
             background-color: black;
             font-size: 2rem;
             font-family: "Roboto", sans-serif;
+            opacity: 0;
+            animation-name: fadein;
+            animation-duration:0.6s;
+            animation-fill-mode: forwards;
         }
         #box {
             height: 100vh;
@@ -22,10 +31,44 @@
             display: flex;
             justify-content: flex-start;
         }
+        #box5 {
+            width:150px;
+            height:50px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        #box5:hover { 
+            width:150px;
+            height:50px; 
+            border-style: solid;
+            border-color: white;
+            border-width: 5px;
+            position: relative;
+        }
+        #box6 {
+            width:500px;
+            height: 200px;
+            align-content: flex-start;
+        }
     </style>
 </head>
 <body>
      <h1>History</h1>
+    <div id="box6">
+        <div id="box5">
+            <a href="index.html">Home</a>
+        </div>
+        <div id="box5">
+            <a href="history.html">History</a>
+        </div>
+        <div id="box5">
+            <a href="Register.html">Register</a>
+            </div>
+        <div id="box5">
+            <a href="Shop.html">Shop</a>
+        </div>
+    </div>
      <div id="box">John G Wave, also known as JGW was born on November 9 1970 and is the son of Joe Metri Dash (Father) and Robert Topala (Mother). During his childhood days, he was considered to be quite a genius on the levels of Shon Ship and Cory Cuber. At 18 months old, he could read college level sentences, at 5 he understood math levels above even his father who he was extraordinary at (he did make GEOMETRY Dash after all). And at 12, they put him through a series of multiple iq tests, and got an estimated score of 243. There was no doubt that Wave was gonna be one of the biggest minds of the 20th century, the only question in everyone's head was what he would be using his brainpower for.
         <img src="file:///C:/Users/Webdesign/Pictures/Screenshots/JOEMETRIDASH.png">
      </div>

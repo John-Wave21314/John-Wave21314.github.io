@@ -34,16 +34,32 @@
             max-width: 30vw;
             margin-right: 3vw;
         }
-        #buybutton {
+        .navbutton {
+            appearance: none;
+            border: none;
+            font-family: inherit;
+            font-size :1rem;
+            height: 25px;
+            width: 100px;
+            color: white;
+            margin-right: 20vw;
+            background-color: black;
+        }
+        .buybutton {
+            appearance: none;
+            border: none;
+            font-family: inherit;
             height: 50px;
             width: 150px;
+            background-color: black;
+            color: white;
             border-style: solid;
             border-color: white;
             border-width: 3px;
-            text-align: center;
-            margin-right: 24vw;
+            margin-right: 20vw;
+            transition: background-color 0.2s, color 0.2s, border-color 0.2s;
         }
-        #buybutton:hover {
+        .buybutton:hover {
             height: 50px;
             width: 150px;
             color: black;
@@ -53,11 +69,14 @@
             border-width: 3px;
             text-align: center;
             margin-right: 24vw; 
+            margin-right: 20vw;
         }
     </style>
 </head>
-
 <body>
+    <div id="format">
+        <button class="navbutton" type="button" onclick="location.href='index.html'">JohnWaveInc</button>
+    </div>
     <h1 id="big">SHOP</h1>
     <div id ="format">
         <div id="picture">
@@ -66,6 +85,7 @@
         <div id="picture"></div>
         <div id="picture"></div>
     </div>
+    <div id ="format">
         <div id="text1">
             <h1 id="big">EVERY END POSTER</h1>
             <p>$9.99 ($9999.99 /w John Wave signature)</p>
@@ -74,21 +94,21 @@
             <h1 id="big">GEO METRI DASH PLUSHIE</h1>
             <p>$19.99</p>
         </div>
-                <div id="text1">
+            <div id="text1">
             <h1 id="big">JOHN WAVE PLUSHIE</h1>
             <p>$999999.99</p>
         </div>
     </div>
     <div id="format">
-        <div id="buybutton">
+        <button class="buybutton" type="button" onclick="location.href='https:/www.youtube.com/watch?v=732eCRPJQxM'">
             <p>BUY</p>
-        </div>
-        <div id="buybutton">
-            <link>BUY</p>
-        </div>
-        <div id="buybutton">
+        </button>
+        <button class="buybutton" type="button" onclick="location.href='https:/www.youtube.com/watch?v=732eCRPJQxM'">
             <p>BUY</p>
-        </div>
+        </button>
+        <button class="buybutton" type="button" onclick="location.href='https:/www.youtube.com/watch?v=732eCRPJQxM'">
+            <p>BUY</p>
+        </button>
     </div>
 </body>
 
